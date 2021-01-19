@@ -1,0 +1,37 @@
+html {
+  color: rgb(33, 33, 33);
+  font-family: Verdana, sans-serif;
+}
+
+header a {
+  /* Selector */
+  /* Declaratii */
+  text-decoration: none;
+}
+
+.logo {
+  color: #9f07a9;
+}
+
+.logo:hover {
+  color: #ffbe00;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+#main-nav {
+  padding: 0;
+}
+
+.external-link::after {
+  background: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84);
+  content: "";
+  display: inline-block;
+
+  margin-left: 5px;
+
+  width: 11px;
+  height: 11px;
+}
