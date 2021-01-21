@@ -1,9 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 html {
   color: rgb(33, 33, 33);
   font-family: Verdana, sans-serif;
 }
 
-header a {
+.logo,
+.main-nav a {
   /* Selector */
   /* Declaratii */
   text-decoration: none;
@@ -25,7 +34,7 @@ header a {
   padding: 0;
 }
 
-.external-link::after {
+[href^="http"]::after {
   background: url(https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/external-link-ltr-icon.svg?b4b84);
   content: "";
   display: inline-block;
@@ -34,4 +43,22 @@ header a {
 
   width: 11px;
   height: 11px;
+}
+
+/* 255 = FF; 0 = 00; */
+
+.experiment {
+  background: #bada55;
+  border: 1px solid black;
+
+  width: 100vw;
+  max-width: 500px;
+  height: 100px;
+  padding: 10px 5px;
+
+  margin: 10px 0;
+
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
 }
