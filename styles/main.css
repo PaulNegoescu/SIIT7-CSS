@@ -46,7 +46,7 @@ html {
 }
 
 /* 255 = FF; 0 = 00; */
-
+/* 
 .experiment {
   background: #bada55;
   border: 1px solid black;
@@ -61,4 +61,67 @@ html {
   overflow: hidden;
   /* text-overflow: ellipsis;
   white-space: nowrap; */
+/* }  */
+
+.card {
+  border: 1px solid #333;
+  overflow: hidden;
+  flex: 30% 0 1;
+
+  /* width: 33.3333%;
+  margin: 0 5px; */
+
+  /* float: left;
+  
+  width: calc(33.3333% - 10px);
+   */
+}
+
+.last.card {
+  order: -1;
+}
+
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.card img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+main {
+  border: 1px solid red;
+  /* background: blue; */
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.site-header {
+  display: flex;
+}
+
+.site-header nav {
+  flex-grow: 1;
+}
+
+.main-nav {
+  display: flex;
+
+  list-style: none;
+}
+
+.main-nav > li {
+  flex: 100px 0 1;
+  text-align: center;
+  border-left: 1px solid #333;
+}
+
+.main-nav > li:first-child {
+  border: none;
 }
