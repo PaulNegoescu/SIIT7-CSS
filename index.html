@@ -10,22 +10,41 @@
 </head>
 
 <body>
+
     <header class="site-header">
         <a href="/" class="logo">
             <img src="images/logo.png" alt="Logo" width="50">
             Pasaroi Inc.
         </a>
 
+        <!-- 
+            BEM - Block Element Modifier
+            
+            numele-blocului
+                numele-blocului__numele-elementului
+                numele-blocului__numele-elemtului--modificator
+        
+        -->
         <nav>
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li class="main-nav__with-submenu">
+                    <a href="#" class="main-nav__submenu-trigger">Products</a>
+                    <ul class="main-nav__submenu">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
+                <li class="main-nav__login-item">
+                    <a href="#">Login</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="clearfix">
+    <main class="clearfix" id="un-id">
         <article class="card">
             <header>
                 <h2>Samsung S20+</h2>

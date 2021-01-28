@@ -118,10 +118,68 @@ main {
 
 .main-nav > li {
   flex: 100px 0 1;
-  text-align: center;
-  border-left: 1px solid #333;
 }
 
-.main-nav > li:first-child {
+.main-nav a {
+  display: inline-block;
+}
+
+.main-nav > li > a {
+  border-left: 1px solid #333;
+  padding: 5px 10px;
+}
+
+.main-nav > li:first-child a,
+.main-nav__login-item a {
   border: none;
 }
+
+.main-nav__login-item {
+  /*
+        display;
+
+        position;
+    */
+  margin-left: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+[id="un-id"] {
+  /*nu am putut evita sa folosesc id in HTML*/
+}
+
+.main-nav__submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+
+  position: absolute;
+  background: #fff;
+  /* z-index: 1000; */
+}
+
+.main-nav__submenu a {
+  padding: 5px 10px;
+}
+
+.main-nav__submenu a:hover {
+  text-decoration: underline;
+}
+
+.main-nav__with-submenu:hover .main-nav__submenu {
+  /* .main-nav__submenu-trigger:hover + .main-nav__submenu,
+.main-nav__submenu:hover { */
+  display: block;
+}
+
+/*
+    1. Porniti de la o clasa cand selectati elemente
+    2. Nu folositi id-uri si !important
+    3. Nu aveti mai mult de 2 combinatori per selector
+
+    BEM
+    OOCSS
+*/
